@@ -51,3 +51,37 @@ You may manually add or change where each icon takes the user with the following
 $('#my_dock_div').addLink(idNum, url);
 
 A new url will overwrite the old url. Specifying false as the url will remove the current url and do nothing on user click
+
+
+Example usage:
+$(document).ready(function(){
+  dock = $('#example');
+  dock.createDock(4, {
+    size: 50,
+    hover_size: 50,
+    tab_size: 20,
+    side: "left"
+  });
+  
+  dock.addIcon(0, {
+    image: "http://jcolicchio.latestdot.net/jsfiddle_logo.png",
+    url: "http://jsfiddle.net/user/jcolicchio/fiddles/"
+  });
+  dock.addIcon(1, {
+    height: 80,
+    image: "http://jcolicchio.latestdot.net/twitter_logo.png",
+    url: "https://twitter.com/joecolicchio"
+  });
+  dock.addIcon(2, {
+    width: 208,
+    height: 58,
+    image: "http://stackoverflow.com/users/flair/1532911.png?theme=clean",
+    rl: "http://stackoverflow.com/users/1532911/jcolicchio",
+    shadow: true
+  });
+  dock.addIcon(3, {
+    image: "http://jcolicchio.latestdot.net/favicon.ico",
+    url: "http://jcolicchio.latestdot.net",
+    shadow: "6px 6px 30px #49f"
+  });
+});​
