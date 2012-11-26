@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+.dock_wrapper {
+    position: absolute;
+    top: 0;
+}
+
+.hover_bar {
+    position: relative;
+}
+
+.dock {
+    position: relative;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -a-transition: 0.3s;
+}
+.hover_bar:hover > .dock {
+    left: 0px !important;
+}
+
+.dock-item {
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    background: rgba(255,255,255,0.0);
+    transition: 0.3s;
+}
+
+.dock  > .dock-item:not(:first-child) {
+    border-top: 2px solid #999 !important;
+}
+
+.dock-item:hover > .content {
+    left: 0px !important;
+}
+
+.dock-item:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.content {
+    background: #333;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    -a-transition: 0.3s;
+    
+    text-align: center;
+    font-size: 26px;
+    top: 50%;
+    box-shadow: 3px 3px 20px #555;
+}

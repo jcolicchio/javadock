@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link rel='stylesheet' type='text/css' href='css/javadock.css'>
+		<script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+		<script src='js/javadock.js'></script>
+		<script>
+			$(document).ready(function(){
+				dock = $('#dock');
+				dock.createDock(4, {
+					"size": 60,
+					"tab_size": 15,
+					"hover_size": 60
+				});
+
+				dock.addIcon(0, {
+					image: 'images/jsfiddle_logo.png',
+					url: "http://jsfiddle.net/user/jcolicchio/fiddles/"
+				});
+				dock.addIcon(1, {
+					image: 'images/twitter_logo.png',
+					height: 100,
+					url: "https://twitter.com/joecolicchio"
+				});
+				dock.addIcon(2, {
+					image: "images/stackoverflow_flair.png",
+					width: 208,
+					height: 58,
+					shadow: true,
+					url: "http://stackoverflow.com/users/1532911/jcolicchio"
+				});
+				dock.addIcon(3, {
+					image: "images/jcolicchio_logo.png",
+					shadow: true,
+					url: "http://jcolicchio.latestdot.net"
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id='dock'></div>
+	</body>
+</html>
