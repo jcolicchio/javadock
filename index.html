@@ -9,7 +9,8 @@
 				dock.createDock(4, {
 					"size": 60,
 					"tab_size": 15,
-					"hover_size": 60
+					"hover_size": 60,
+					border_size: 5
 				});
 
 				dock.addIcon(0, {
@@ -33,6 +34,8 @@
 					shadow: true,
 					url: "http://jcolicchio.latestdot.net"
 				});
+				
+				dock.css({top: "20px"});
 			});
 		</script>
 	</head>
